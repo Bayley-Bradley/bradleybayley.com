@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  --black: #161616;
+  --accent-dark: #1a1a1a;
+  --primary-white: #d6d6d6;
+  --primary-white-translucent: rgba(214, 214, 214, 0.25);
+  --pure-white: #ffffff;
+  --accent-light: #ef806c;
+}
+
+html {
+  font-family: Poppins, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--primary-white);
+}
+
+body {
+  background-color: #161616;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header-wrapper {
+  position: relative;
+}
+
+.header-container {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--primary-white-translucent);
+}
+
+.logo {
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 500;
+  text-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+.highlight {
+  color: var(--accent-light);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+.nav__list-item a {
+  padding: 1rem 2rem;
+  transition: 0.3s;
+}
+
+.nav__list-item a:hover {
+  color: var(--accent-light);
+}
+
+.floating-socials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  position: absolute;
+  margin-top: 2rem;
+}
+
+.social-icon {
+  height: 60px;
+  width: 60px;
+  border: 1px solid var(--primary-white);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.social-icon a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon svg {
+  fill: var(--primary-white);
+  transition: 0.5s;
+}
+
+.social-icon:hover {
+  border-color: var(--accent-light);
+}
+
+.social-icon:hover svg {
+  fill: #ef806c;
+}
